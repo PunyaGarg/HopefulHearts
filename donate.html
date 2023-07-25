@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate - Poverty Alleviation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="initiatives.html">Initiatives</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <!-- ... (previous HTML code) ... -->
+
+<section class="donate-form">
+    <div class="form-content">
+      <h2>Make a Donation</h2>
+      <form id="donationForm">
+        <h3>Personal Information</h3>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber">
+  
+        <h3>Donation Details</h3>
+        <label for="donationAmount">Donation Amount:</label>
+        <input type="number" id="donationAmount" name="donationAmount" min="1" step="any" required>
+  
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="other">Other</option>
+        </select>
+  
+        <label for="dedication">Dedicate this donation to:</label>
+        <input type="text" id="dedication" name="dedication">
+  
+        <label for="newsletter">Subscribe to our Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+  
+        <h3>Credit/Debit Card Details</h3>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+  
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" required>
+  
+        <label for="cvv">CVV Code:</label>
+        <input type="text" id="cvv" name="cvv" required>
+  
+        <!-- Add any other additional fields as needed -->
+  
+        <button type="submit">Donate Now</button>
+        <div id="thankYouMessage"></div>
+      </form>
+    </div>
+  </section>
+  
+  <!-- ... (remaining HTML code) ... -->
+  
+  <footer>
+    <p>&copy; 2023 Poverty Alleviation Organization. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for the Donation Form -->
+  <script src="script.js"></script>
+</body>
+</html>
